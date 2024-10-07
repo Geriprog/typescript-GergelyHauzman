@@ -9,10 +9,10 @@ export class TodoList<T> {
   }
 
   removeProductById(id: number): void {
-    this.items = this.items.filter(item => item.id !== id);
+    this.items.delete(-TodoItem);
 }
 
-  listAllItems(): TodoItem [] {
-    console.log(this.items);
+  listAllItems(){
+    console.log (this.items);
   }
 }
